@@ -1,0 +1,96 @@
+.sidebar {
+    background: #2f323a;
+    position: relative;
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 56px)   ; 
+    transition: 0.5s;
+    transition-property: left;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    left: -190px;
+  }
+
+
+
+  /* hack para ajustar mobile e desktop */
+  @media (min-width:320px) {
+    .sidebar {
+      height: calc(94vh - 59px);
+
+    }
+  }
+
+  @media (min-width:1281px) {
+    .sidebar {
+      height: calc(100vh - 56px);
+    }
+  }
+
+
+  .sidebar .profile_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+  }
+
+  .sidebar h4 {
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .sidebar a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+  }
+
+  .sidebar a:hover {
+    background: #19B3D3;
+  }
+
+  .sidebar i {
+    padding-right: 10px;
+  }
+
+  .oss-bottom-last {
+    margin-top: auto;
+    margin-bottom: 10px;
+  }
+
+  label #sidebar_btn {
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+  }
+
+  label #sidebar_btn:hover {
+    color: #19B3D3;
+  }
+
+
+
+  .sidebar a span {
+    display: none;
+  }
+
+  .sidebar a {
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+  }
